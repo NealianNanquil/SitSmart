@@ -22,13 +22,23 @@ export default function TabLayout() {
             <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
           ),
         }}
+        
       />
       <Tabs.Screen
         name="explore"
         options={{
-          title: 'Explore',
+          title: 'Tips',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+            <TabBarIcon name={focused ? 'heart' : 'heart-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="detectionScreen"
+        options={{
+          title: 'Detect your Posture',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'eye' : 'eye-outline'} color={color} />
           ),
         }}
       />
